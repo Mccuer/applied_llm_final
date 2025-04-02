@@ -271,7 +271,7 @@ if __name__ == "__main__":
     print("Test Run:")
 
     # --- Load Data ---
-    data = load_file("summarized_code_test.json")
+    data = load_file("summarized_data.json")
     print("Number of entries:", len(data))
 
     # --- Split Data ---
@@ -391,7 +391,7 @@ if __name__ == "__main__":
     model.train()
 
     optimizer = torch.optim.AdamW(model.parameters(), lr=5e-6, weight_decay=0.01) # Keep LR low
-    num_epochs = 2
+    num_epochs = 10
     eval_freq = max(1, len(train_loader) // 4) if len(train_loader) > 0 else 1
     eval_iter = max(1, len(val_loader) // 2) if val_loader and len(val_loader) > 0 else 1
     print(f"Eval freq: {eval_freq} steps, Eval iter: {eval_iter} batches")
@@ -413,30 +413,6 @@ if __name__ == "__main__":
             max_seq_length_for_data=max_seq_length_for_data # Pass context for generation
         )
 
-    end_time = time.time()
-    execution_time_minutes = (end_time - start_time) / 60
-    print(f"Training completed in {execution_time_minutes:.2f} minutes.")
-
-    # --- Training Loop ---
-    num_epochs = 2
-    eval_freq = max(1, len(train_loader) // 4) if len(train_loader) > 0 else 1
-    eval_iter = max(1, len(val_loader) // 2) if val_loader and len(val_loader) > 0 else 1
-    print(f"Eval freq: {eval_freq} steps, Eval iter: {eval_iter} batches")
-    print("Starting finetuning...")
-    start_time = time.time()
-    if len(train_loader) == 0:
-        print("Training loader is empty. Skipping training.")
-        train_losses, val_losses, tokens_seen = [], [], []
-    else:
-        train_losses, val_losses, tokens_seen = train_model_simple(
-            model, train_loader, val_loader, optimizer, device,
-            num_epochs=num_epochs, eval_freq=eval_freq, eval_iter=eval_iter,
-            start_context=format_input(example_val_entry),
-            tokenizer=tokenizer,
-            eos_id=llama3_stop_ids,
-            pad_token_id=pad_token_id,
-            max_seq_length_for_data=max_seq_length_for_data
-        )
     end_time = time.time()
     execution_time_minutes = (end_time - start_time) / 60
     print(f"Training completed in {execution_time_minutes:.2f} minutes.")
