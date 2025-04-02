@@ -1,0 +1,13 @@
+# Core ML Libraries
+torch>=2.0.0
+transformers>=4.38.0
+accelerate>=0.25.0
+
+# Utilities
+tqdm>=4.60.0
+matplotlib>=3.5.0
+accelerate
+
+# Implicit Dependencies
+huggingface-hub>=0.17.0
+sentencepiece>=0.1.9
