@@ -1,0 +1,122 @@
+# ROUGE Evaluation Results
+
+
+===== 1. Shorter Summarize → GPT2 Small (Original) =====
+ROUGE Scores (Precision, Recall, F-measure):
+rouge1:
+  Precision: 0.1794
+  Recall:    0.1927
+  F-measure: 0.1728
+rouge2:
+  Precision: 0.0214
+  Recall:    0.0224
+  F-measure: 0.0202
+rougeL:
+  Precision: 0.1407
+  Recall:    0.1516
+  F-measure: 0.1355
+
+===== 2. Full Summarize → GPT2 Small (Original) =====
+ROUGE Scores (Precision, Recall, F-measure):
+rouge1:
+  Precision: 0.2110
+  Recall:    0.1705
+  F-measure: 0.1568
+rouge2:
+  Precision: 0.0282
+  Recall:    0.0210
+  F-measure: 0.0191
+rougeL:
+  Precision: 0.1636
+  Recall:    0.1389
+  F-measure: 0.1248
+
+===== 3. Shorter Summarize → GPT2 Medium (Original) =====
+ROUGE Scores (Precision, Recall, F-measure):
+rouge1:
+  Precision: 0.1450
+  Recall:    0.1989
+  F-measure: 0.1605
+rouge2:
+  Precision: 0.0196
+  Recall:    0.0279
+  F-measure: 0.0219
+rougeL:
+  Precision: 0.1238
+  Recall:    0.1727
+  F-measure: 0.1378
+
+===== 4. Full Summarize → GPT2 Medium (Original) =====
+ROUGE Scores (Precision, Recall, F-measure):
+rouge1:
+  Precision: 0.2108
+  Recall:    0.2040
+  F-measure: 0.1775
+rouge2:
+  Precision: 0.0288
+  Recall:    0.0287
+  F-measure: 0.0241
+rougeL:
+  Precision: 0.1690
+  Recall:    0.1675
+  F-measure: 0.1433
+
+===== 5. Shorter Summarize → GPT2 Small (Fine-tuned) =====
+ROUGE Scores (Precision, Recall, F-measure):
+rouge1:
+  Precision: 0.4159
+  Recall:    0.3131
+  F-measure: 0.3320
+rouge2:
+  Precision: 0.1109
+  Recall:    0.0873
+  F-measure: 0.0911
+rougeL:
+  Precision: 0.3043
+  Recall:    0.2376
+  F-measure: 0.2488
+
+===== 6. Full Summarize → GPT2 Small (Fine-tuned) =====
+ROUGE Scores (Precision, Recall, F-measure):
+rouge1:
+  Precision: 0.4415
+  Recall:    0.3094
+  F-measure: 0.3247
+rouge2:
+  Precision: 0.1094
+  Recall:    0.0856
+  F-measure: 0.0876
+rougeL:
+  Precision: 0.3139
+  Recall:    0.2262
+  F-measure: 0.2355
+
+===== 7. Shorter Summarize → GPT2 Medium (Fine-tuned) =====
+ROUGE Scores (Precision, Recall, F-measure):
+rouge1:
+  Precision: 0.4459
+  Recall:    0.3719
+  F-measure: 0.3808
+rouge2:
+  Precision: 0.1354
+  Recall:    0.1126
+  F-measure: 0.1159
+rougeL:
+  Precision: 0.3140
+  Recall:    0.2651
+  F-measure: 0.2700
+
+===== 8. Full Summarize → GPT2 Medium (Fine-tuned) =====
+ROUGE Scores (Precision, Recall, F-measure):
+rouge1:
+  Precision: 0.5717
+  Recall:    0.4552
+  F-measure: 0.4675
+rouge2:
+  Precision: 0.3045
+  Recall:    0.2766
+  F-measure: 0.2776
+rougeL:
+  Precision: 0.4525
+  Recall:    0.3729
+  F-measure: 0.3804
