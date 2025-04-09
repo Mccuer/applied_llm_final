@@ -18,11 +18,12 @@ Evaluation: ROUGE-1, ROUGE-2, and ROUGE-L scores on unseen test data
 ## 📈 Results
 Fine-tuned models showed significant improvement over the original GPT-2 models:
 
-Model	Dataset	ROUGE-1 F1	ROUGE-2 F1	ROUGE-L F1
-GPT-2 Small	Full	+107%	+359%	+89%
-GPT-2 Medium	Full	+163%	+1052%	+165%
-GPT-2 Small	Short	+92%	+351%	+84%
-GPT-2 Medium	Short	+137%	+429%	+96%
+| Model          | Dataset | ROUGE-1 F1 | ROUGE-2 F1 | ROUGE-L F1 |
+|----------------|---------|------------|------------|------------|
+| GPT-2 Small    | Full    | +107%      | +359%      | +89%       |
+| GPT-2 Medium   | Full    | +163%      | +1052%     | +165%      |
+| GPT-2 Small    | Short   | +92%       | +351%      | +84%       |
+| GPT-2 Medium   | Short   | +137%      | +429%      | +96%       |
 
 
 ## 💡 Future Improvements
